@@ -5,7 +5,7 @@ with open('requirements.txt') as file:
 
 setup(
     name='squareapi',
-    version='0.0.1',
+    version='0.0.2',
     description='Square API',
     author='Zack Plauché',
     packages=find_packages(),

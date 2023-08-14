@@ -1,6 +1,5 @@
 import os
 
-from dotenv import load_dotenv, find_dotenv
 from square.client import Client as SquareClient
 from square.api.invoices_api import InvoicesApi
 
@@ -17,7 +16,6 @@ class SquareAPI(SquareClient):
     @classmethod
     def from_env(cls, **kwargs):
         """Create a SquareAPI instance from environment variables."""
-        load_dotenv(find_dotenv())
         return cls(
             access_token=os.getenv('SQUARE_ACCESS_TOKEN'),
             environment=os.getenv('SQUARE_ENVIRONMENT'),
