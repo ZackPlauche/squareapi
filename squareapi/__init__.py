@@ -1,1 +1,1 @@
-from .api import get_invoices
+from .api import SquareAPI
